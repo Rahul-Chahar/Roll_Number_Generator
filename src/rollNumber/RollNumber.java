@@ -12,13 +12,13 @@ public class RollNumber {
     private static int count = 1;
     private String rollNo;
 
-    RollNumber() {
+    public RollNumber() {
         rollNo = assignRollNo();
     }
 
     private String assignRollNo() {
         Date d = new Date();
-        String rno = "Univ-" + (d.getYear() + 1900) + "-" + count;
+        String rno = "GLAU" + (d.getYear() + 191378) + count;
         count++;
         return rno;
     }
